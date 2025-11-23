@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Mev Consultoria</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        .contato-box {
+            background-color: var(--cor-fundo-card);
+            padding: 40px;
+            border-radius: 16px;
+            text-align: center;
+            max-width: 700px;
+            margin: 40px auto;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+        .whatsapp-zao {
+            background-color: #25D366;
+            color: white;
+            font-size: 1.3rem;
+            padding: 20px 30px;
+            border-radius: 50px;
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            margin: 30px 0;
+            transition: 0.3s;
+            font-weight: bold;
+        }
+        .whatsapp-zao:hover { transform: scale(1.05); box-shadow: 0 0 20px rgba(37, 211, 102, 0.4); }
+    </style>
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mev <span>Consultoria</span></a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/message/ESJRV63FECTAD1" target="_blank" class="btn btn-outline">
+                    <span class="iconify" data-icon="mdi:whatsapp"></span> Atendimento
+                </a>
+            </div>
+            <button id="menu-toggle" class="menu-icon">
+                <span class="iconify" data-icon="mdi:menu" data-width="28"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section class="container" style="padding-top: 80px;">
+            <div style="text-align: center;">
+                <h1 style="font-size: 3em;">Fale Conosco</h1>
+                <p style="color: var(--cor-texto-secundario);">Sem formulários longos. Resposta rápida.</p>
+            </div>
+
+            <div class="contato-box">
+                <h2>Canal Preferencial</h2>
+                <p>Para orçamentos rápidos e dúvidas urgentes, use o WhatsApp.</p>
+                
+                <a href="https://wa.me/message/ESJRV63FECTAD1" class="whatsapp-zao">
+                    <span class="iconify" data-icon="mdi:whatsapp" data-width="32"></span>
+                    INICIAR ATENDIMENTO AGORA
+                </a>
+                
+                <div style="margin-top: 30px; padding-top: 30px; border-top: 1px solid rgba(255,255,255,0.1);">
+                    <p><span class="iconify" data-icon="mdi:email-outline"></span> E-mail: contato@mevdigital.com.br</p>
+                    <p><span class="iconify" data-icon="mdi:map-marker"></span> Base: São Paulo - SP (Atendimento Nacional)</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">Mev Consultoria</a>
+                <p style="margin-top: 15px; font-size: 0.9em;">Simplificando sua vida digital.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="servicos.html">Licenciamento</a></li>
+                    <li><a href="servicos.html">Transferência</a></li>
+                    <li><a href="servicos.html">Recursos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#"><span class="iconify" data-icon="mdi:instagram"></span></a>
+                    <a href="#"><span class="iconify" data-icon="mdi:facebook"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Mev Consultoria Digital.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

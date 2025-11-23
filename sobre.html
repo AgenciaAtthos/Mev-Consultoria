@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós | Mev Consultoria</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Poppins:wght@600;700&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header id="main-header">
+        <div class="container">
+            <a href="index.html" class="logo">Mev <span>Consultoria</span></a>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="header-cta">
+                <a href="https://wa.me/message/ESJRV63FECTAD1" target="_blank" class="btn btn-outline">
+                    <span class="iconify" data-icon="mdi:whatsapp"></span> Atendimento
+                </a>
+            </div>
+            <button id="menu-toggle" class="menu-icon">
+                <span class="iconify" data-icon="mdi:menu" data-width="28"></span>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero-sobre" style="text-align: center; padding: 80px 20px;">
+            <div class="container">
+                <h1 style="font-size: 3em; margin-bottom: 20px;">Agilidade, Confiança e Foco no Digital</h1>
+                <p style="font-size: 1.2em; max-width: 800px; margin: 0 auto; color: var(--cor-texto-secundario);">
+                    Nossa missão é simples: acabar com a burocracia usando a tecnologia, oferecendo um atendimento humano de amigo para amigo.
+                </p>
+            </div>
+        </section>
+
+        <section class="container" style="margin-bottom: 60px;">
+            <div class="cards-grid missao-valores">
+                <div class="card">
+                    <span class="iconify" data-icon="mdi:rocket-launch" style="font-size: 2.5rem; color: var(--cor-roxo-principal); margin-bottom:15px;"></span>
+                    <h3>Agilidade</h3>
+                    <p>Foco na rapidez. Usamos o digital para reduzir o tempo de espera, com a meta de emitir documentos em tempo recorde.</p>
+                </div>
+                <div class="card">
+                    <span class="iconify" data-icon="mdi:lightbulb-on" style="font-size: 2.5rem; color: var(--cor-roxo-principal); margin-bottom:15px;"></span>
+                    <h3>Transparência</h3>
+                    <p>Sem letras miúdas. Comunicamos custos, prazos e riscos de forma clara. Você sabe o que paga.</p>
+                </div>
+                <div class="card">
+                    <span class="iconify" data-icon="mdi:hand-heart" style="font-size: 2.5rem; color: var(--cor-roxo-principal); margin-bottom:15px;"></span>
+                    <h3>Atendimento Humano</h3>
+                    <p>Apesar de sermos digitais, nosso atendimento é feito por pessoas, com empatia e foco na sua solução.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="main-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="index.html" class="logo">Mev Consultoria</a>
+                <p style="margin-top: 15px; font-size: 0.9em;">Simplificando sua vida digital.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Serviços</h4>
+                <ul>
+                    <li><a href="servicos.html">Licenciamento</a></li>
+                    <li><a href="servicos.html">Transferência</a></li>
+                    <li><a href="servicos.html">Recursos</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Social</h4>
+                <div style="display: flex; gap: 15px;">
+                    <a href="#"><span class="iconify" data-icon="mdi:instagram"></span></a>
+                    <a href="#"><span class="iconify" data-icon="mdi:facebook"></span></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© <span id="current-year"></span> Mev Consultoria Digital.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
