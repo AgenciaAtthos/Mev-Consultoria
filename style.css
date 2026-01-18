@@ -18,41 +18,58 @@ body {
 /* CUSTOM EFFECTS                                            */
 /* ========================================================= */
 
-/* Purple Glow Effect (Slide 1 - Hero Only) */
+/* Purple Glow Effect (Hero Only) */
 .purple-glow {
     position: absolute;
-    width: 600px;
-    height: 600px;
-    background: radial-gradient(circle, rgba(128, 90, 213, 0.12) 0%, rgba(13, 3, 32, 0) 70%);
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(128, 90, 213, 0.15) 0%, rgba(13, 3, 32, 0) 70%);
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     pointer-events: none;
     z-index: 0;
+    mix-blend-mode: screen;
 }
 
-/* Neon Text Effect (Key phrases only) */
+/* Neon Text Effect */
 .neon-text {
-    text-shadow: 0 0 15px rgba(128, 90, 213, 0.5);
+    text-shadow: 0 0 10px rgba(128, 90, 213, 0.6), 0 0 20px rgba(128, 90, 213, 0.3);
 }
 
-/* MEV Card - Decision Block */
+/* MEV Card - Interactive */
 .mev-card {
     background-color: #18181B;
     /* brand.card */
     border: 1px solid rgba(255, 255, 255, 0.05);
-    /* Subtle border */
-    border-radius: 0.75rem;
-    transition: all 0.3s ease;
+    border-radius: 1rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
 }
 
 .mev-card:hover {
-    border-color: #805AD5;
-    /* Hover Purple */
-    transform: translateY(-2px);
+    border-color: rgba(128, 90, 213, 0.5);
+    /* Brand Purple with opacity */
+    box-shadow: 0 0 20px rgba(128, 90, 213, 0.15);
+    transform: translateY(-4px);
 }
 
-/* Gradient Border Card (Updated for subtle purple hover) */
+.mev-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(800px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(255, 255, 255, 0.06), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.mev-card:hover::before {
+    opacity: 1;
+}
+
+/* Gradient Border Card (Legacy/Alternative) */
 .gradient-border {
     position: relative;
     background: #18181B;
